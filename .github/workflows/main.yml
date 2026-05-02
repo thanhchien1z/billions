@@ -19,8 +19,8 @@ jobs:
       - name: Install Verified Agent Skill
         run: |
           npx clawhub@latest install verified-agent-identity --force
-    cd scripts
-    npm install
+          cd scripts
+          npm install
 
       - name: Create Identity & Generate Reward Link
         run: |
