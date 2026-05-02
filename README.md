@@ -26,12 +26,12 @@ jobs:
           node-version: 20
 
       - name: Install ClawHub skill
-        run: npx clawhub@latest install verified-agent-identity --force
+        run: npx clawhub@latest install billionsnetwork-verified-agent-identity
 
       - name: Install dependencies
         run: |
           cd scripts
-          npm install
+          npm install -g npm@11.13.0
 
       - name: Create Ethereum Identity
         run: node scripts/createNewEthereumIdentity.js
