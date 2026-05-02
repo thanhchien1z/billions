@@ -6,11 +6,11 @@ on:
       agent_name:
         description: Agent name
         required: true
-        default: zelucian
+        default: thanhchien  
       agent_description:
         description: Agent description
         required: true
-        default: zelucian AI Agent
+        default: thanhchien AI Agent
 
 jobs:
   verify:
