@@ -29,9 +29,7 @@ jobs:
         run: npx clawhub@latest install verified-agent-identity --force
 
       - name: Install dependencies
-        run: |
-          cd scripts
-          npm install -g npm@11.13.0
+        run: npm install -g npm@11.13.0
 
       - name: Create Ethereum Identity
         run: node scripts/createNewEthereumIdentity.js
