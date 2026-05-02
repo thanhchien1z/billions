@@ -26,8 +26,7 @@ jobs:
           node-version: 20
 
       - name: Install ClawHub skill
-        run: npx clawhub@latest install billionsnetwork-verified-agent-identity
-
+        run: npx clawhub@latest install verified-agent-identity
       - name: Install dependencies
         run: |
           cd scripts
